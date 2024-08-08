@@ -52,7 +52,7 @@ namespace RunningActivity.WebApi.Controllers
         {
             try
             {
-                _log.Info("AddUserProfiles method called");
+                _log.Info("AddUserProfiles method calledss");
                 var _userProfiles = await _IUserProfileService.Add(userProfiles);
                 return CreatedAtAction(nameof(GetUserProfiles), new { id = _userProfiles.Id }, _userProfiles);
             }
